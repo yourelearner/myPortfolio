@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    /* Dark Mode styles */
+    body.dark {
+        background-color: #1a202c; /* Dark background */
+        color: white; /* Text color for dark mode */
+    }
+    .dark .bg-white {
+        background-color: #2d3748; /* Dark background for navbar */
+    }
+    .dark .text-gray-900 {
+        color: #f7fafc; /* Light text color for dark mode */
+    }
+</style>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="logo.jpg" class="w-16 h-16 object-cover rounded-full" alt="Logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">My Portfolio</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button id="toggle-theme" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Light mode
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                      <a href="#playlist" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Playlist</a>
+                  </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-gray-900 text-white px-36 py-20">
+    <div class="container mx-auto flex items-center justify-between">
+
+      <!-- Left Side: Text and Social Media Icons -->
+      <div class="w-full md:w-1/2 text-left">
+        <h1 class="text-5xl font-bold mb-4">Hello there, I'm Leonard</h1>
+        <p class="text-lg mb-6">I'm a Web Developer Student</p>
+        <a href="#about" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">About me</a>
+        <a href="#about" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download CV</a>
+
+        <!-- Social Media Icons -->
+        <div class="mt-5 space-x-6">
+          <a href="https://www.instagram.com/definitelynotleonaard?igsh=MTRqNDdxZh0bHg2Nw" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.x.com/3in1coffee20?s=09" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.facebook.com/Gatzkie" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Right Side: Image -->
+      <div class="w-full md:h-full flex justify-end"> <!-- Added flex justify-end -->
+        <img src="pic.jpg" alt="Right Side Image" class="w-1/2 h-1/2 object-cover rounded-full shadow-lg">
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Portfolio Section -->
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <img src="fishhop.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-2xl font-bold">Fish Hop</h3>
+            <p class="text-gray-600">Fish Hop is sea diving game, where the fish will swim while avoiding collision to the rocks</p>
+            <a href="https://github.com/yourelearner/Fish-Hop" target="_blank" class="text-gray-400 hover:text-white">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <img src="theSource.png" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-2xl font-bold">The Source</h3>
+            <p class="text-gray-600">The Source is a KOISK for a Milktea Supplies Store, where customer can order supplies that they needed</p>
+            <a href="https://github.com/yourelearner/theSource" target="_blank" class="text-gray-400 hover:text-white">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+          <img src="youthSaver.png" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-2xl font-bold">Youth Saver</h3>
+            <p class="text-gray-600">Youth Saver is a Web System for student mental health</p>
+            <a href="https://github.com/yourelearner/youthSaver" target="_blank" class="text-gray-400 hover:text-white">
+              <i class="fab fa-github fa-2x"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Parent Flex Container -->
+<section id="about" class="py-20 bg-gray-100">
+  <div class="container mx-auto flex justify-between">
+
+      <!-- About Section -->
+      <div class="w-1/2 px-40">
+          <h2 class="text-4xl font-bold text-left mb-10">About Me</h2>
+          <p class="text-lg text-gray-600 max-w-3xl">I'm a 3rd Year Computer Science Student with a passion for creating dynamic, responsive, and user-friendly websites. With experience in HTML, CSS, JavaScript, Java, JavaScript, Python, MongoDB, MySQL, Bootstrap, and PHP. I aim to build products that provide meaningful experiences to users.</p>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="w-1/2 px-40">
+          <h2 class="text-4xl font-bold mb-10 text-left px-10">Experience</h2>
+          <div class="grid grid-cols-3 gap-14">
+              <!-- Programming Language Icons -->
+              <i class="fab fa-js text-yellow-500 fa-2xl" title="JavaScript"></i>
+              <i class="fab fa-java text-red-500 fa-2xl" title="Java"></i>
+              <i class="fab fa-python text-blue-500 fa-2xl" title="Python"></i>
+              <i class="fab fa-php text-blue-700 fa-2xl" title="PHP"></i>
+              <i class="fab fa-html5 text-orange-500 fa-2xl" title="HTML"></i>
+              <i class="fab fa-css3-alt text-blue-600 fa-2xl" title="CSS"></i>
+              <i class="fab fa-bootstrap text-info fa-2xl" title="Bootstrap"></i>
+              <i class="fas fa-database text-blue-700 fa-2xl" title="SQL"></i>
+              <i class="fas fa-database text-green-500 fa-2xl" title="MongoDB"></i>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+<!-- Music Section -->
+<section id="music" class="py-20 bg-gray-400">
+  <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Music Playlist</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Embed YouTube Video -->
+          <div class="col-span-1">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/XIqQIxNvjX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
+      <p class="text-lg">Feel free to reach out for any project or collaboration!</p>
+      <form class="mt-8 max-w-xl mx-auto">
+        <div class="mb-4">
+          <input type="text" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md" placeholder="Your Name">
+        </div>
+        <div class="mb-4">
+          <input type="email" class="w-full px-3 py-2 bg-gray-700 text-white rounded-md" placeholder="Your Email">
+        </div>
+        <div class="mb-4">
+          <textarea class="w-full px-3 py-2 bg-gray-700 text-white rounded-md" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="py-4 bg-gray-800 text-center text-white">
+  <p>&copy; 2024 Leonard Gatpolintan. All rights reserved.</p>
+  
+
+</footer>
+
+
+<script>
+  // Toggle dark/light mode
+  const toggleThemeButton = document.getElementById('toggle-theme');
+  toggleThemeButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      if (document.body.classList.contains('dark')) {
+          toggleThemeButton.innerText = 'Light mode';
+      } else {
+          toggleThemeButton.innerText = 'Get started';
+      }
+  });
+
+  // Toggle mobile menu
+  const hamburgerButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+  const mobileMenu = document.getElementById('navbar-sticky');
+  
+  hamburgerButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: 'XIqQIxNvjX8', // Replace with your video ID
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    .video-responsive {
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</script>
+
+</body>
+</html>
